@@ -2,16 +2,38 @@
 <html>
 
 <head>
-<title>ICSE Result Portal</title>
+<title>ICSE Result Portal 2026</title>
 </head>
 
 <body>
 
 <h1>ICSE Olympiad Result Portal 2026</h1>
 
-<p>Welcome to result portal</p>
+<p>Enter Roll Number to Check Result</p>
 
-<a href="student1.html">ABHYANSH KUMAR PANDEY</a>
+<input type="text" id="roll" placeholder="Enter Roll Number">
+
+<br><br>
+
+<button onclick="checkResult()">Check Result</button>
+
+<script>
+
+function checkResult(){
+
+var roll = document.getElementById("roll").value;
+
+if(roll == "9631AWSMS"){
+window.location="student1.html";
+}
+
+else{
+alert("Roll Number Not Found");
+}
+
+}
+
+</script>
 
 </body>
 </html>
